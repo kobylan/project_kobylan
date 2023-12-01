@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    overflow: hidden; /* Ensure images don't overflow their container */
+}
+
+.slide {
+    display: none;
+    height: 300px; /* Adjust the height as needed */
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease; /* Smooth transition effect */
+}
+
+/* Navigation buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    text-align: center;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .image-container {
+      position: relative;
+      max-width: 550px;
+      margin: 150px auto;
+      overflow: hidden;
+    }
+
+    .image-overlay {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      color: #fff; /* Text color */
+      font-size: 18px; /* Adjust the font size as needed */
+      font-weight: bold;
+      text-align: left;
+      z-index: 2; /* Ensure the text appears above the image */
+    }
+
+    .zoom-image {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .image-container:hover .zoom-image {
+      transform: scale(1.2); /* Adjust the scale factor for the desired zoom level */
+    }
+
+    .shop-now-button {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: red;
+      color: #fff;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: opacity 0.3s ease-in-out;
+      opacity: 0; /* Initially invisible */
+      z-index: 1; /* Ensure the button appears above the image */
+      border: 2px solid red; /* Red border color */
+    }
+
+    .image-container:hover .shop-now-button {
+      opacity: 1; /* Visible on hover */
+    }
+
+    /* Additional styling for demonstration purposes */
+    body {
+      background-color: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="image-container">
+    <div class="image-overlay">Clearer Than Your Life</div>
+    <a href="#" class="shop-now-button">Shop Now</a>
+    <img class="zoom-image" src="C:\Users\kobylan\OneDrive\Рабочий стол\проект в ноябре\img\image2.jpg" alt="Zoomable Image">
+  </div>
+
+</body>
+</html>
