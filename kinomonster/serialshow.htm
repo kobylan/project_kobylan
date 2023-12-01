@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Serial Mr.Robot</title>
+	<meta name="description" content="Киномонстр - это портал о кино" />
+	<meta name="keywords" content="serial, serial online hd" />
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="node.js"></script>
+</head>
+<body>
+	<button onclick="toggleMode()" >Change Mode</button>
+
+	<div class="main">
+		
+		<div class="header">
+			<div class="logo">
+				<div class="logo_text">
+					<h1><a href="index.html">КиноМонстр</a></h1>
+					<h2>Кино - наша страсть!</h2>
+				</div>
+			</div>
+			
+			<div class="menubar">
+				
+				<ul class="menu">
+					<li><a href="index.html">Главная</a></li>	
+					<li><a href="films.html">Фильмы</a></li>
+					<li class="selected"><a href="serial.htm">Сериалы</a></li>
+					<li><a href="rating.html">Рейтинг фильмов</a></li>
+					<li><a href="contact.html">Контакты</a></li>
+				</ul>
+
+			</div>
+
+		</div>
+
+			
+		<div class="site_content">
+			
+			<div class="sidebar_container">
+				
+				<div class="sidebar">
+					<h2>Поиск</h2>
+					<form method="post" action="#" id="search_form" >
+						<input type="search" name="search_field" placeholder="ваш запрос" />
+						<input type="submit" class="btn" value="найти" />
+					</form>
+				</div>
+
+				<div class="sidebar">
+					<h2>Вход</h2>
+					<form method="post" action="#" id="login">
+						
+						<input type="text" name="login_field" placeholder="логин" />
+						<input type="password" name="password_field" placeholder="пароль" />
+						<input type="submit" class="btn" value="вход" />
+						<div class="lables_passreg_text">
+							<span><a href="#">забыли пароль?</a></span> | <span><a href="#">регистрация</a></span>
+						</div>
+
+					</form>
+				</div>
+
+				<div class="sidebar">
+					<h2>Новости</h2>
+					<span>31.02.2018</span>
+					<p>Мы запустили расширенный поиск</p>
+					<a href="#">читать</a>
+				</div>
+
+				<div class="sidebar">
+					<h2>Рейтинг фильмов</h2>
+					<ul>
+						<li><a href="serialshow.htm">Mr.Robot</a><span class="rating_sidebar">8.1</span></li>
+						<li><a href="#">Матрица</a><span class="rating_sidebar">8.0</span></li>
+						<li><a href="#">Безумный макс</a><span class="rating_sidebar">7.5</span></li>
+						<li><a href="#">Облачный атлас</a><span class="rating_sidebar">7.4</span></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="content">
+				
+				<h1>Mr.Robot</h1>
+                <iframe width="570" height="330" src="https://www.youtube.com/embed/Vwp3IIlIle8" title="Мистер Робот (2015) — русский трейлер 1 сезона сериала" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<div class="info_serial_page">
+					<span class="label">рейтинг: </span><span class="value">10 / 10</span>
+					<span class="label">год: </span><span class="value">2015</span>
+					<span class="label">режиссер: </span><span class="value">
+                        Сэм Эсмейл, Джим МакКэй, Триша Брок</span>
+				</div>
+				<hr>	
+				<h2>Описание Mr.Robot</h2>
+				<div class="descriptions_serial">
+					<img src="assets/img/mr.robot.png">
+					Когда засуха приводит человечество к продовольственному кризису, коллектив исследователей и учёных отправляется сквозь червоточину (которая предположительно соединяет области пространства-времени через большое расстояние) в путешествие, чтобы превзойти прежние ограничения для космических путешествий человека и переселить человечество на другую планету.
+				</div>
+
+
+				
+				<hr>
+				<h2>Отзывы об Mr.Robot</h2>
+
+				<div class="reviews">
+					<div class="review_name">
+						Zangar
+					</div>
+					<div class="review_text">
+						Отличный фильм, 3 часа пролетели не заметно.
+					</div>
+				</div>
+
+				<div class="reviews">
+					<div class="review_name">
+						
+					</div>
+					<div class="review_text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid alias, beatae reiciendis nam corrupti, illo inventore rem expedita debitis quidem veniam vitae, nostrum totam. Aspernatur quam quaerat repellat nulla aliquam.
+					</div>
+				</div>
+	
+				<div class="send">	
+					<form method="post" action="#" id="review">
+						<input type="text" name="review_name" placeholder="ваше имя">
+						<textarea name="review_text"></textarea>
+						<input class="btn" type="submit" value="отправить">
+					</form>
+				</div>
+
+
+			
+
+			</div>
+
+		</div>
+
+
+
+
+
+	<div class="footer">
+		<p>
+			<a href="index.html">Главная</a> |
+			<a href="films.html">Фильмы</a> | 
+			<a href="serial.htm">Сериалы</a> |
+			<a href="rating.html">Рейтинг фильмов</a> |
+			<a href="contact.html">Контакты</a>
+		</p>
+		<p>wh-db.com 2015</p>
+	</div>
+
+	</div>
+	
+</body>
+</html>

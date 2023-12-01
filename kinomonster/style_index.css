@@ -1,0 +1,15 @@
+body {
+    transition: background-color 0.5s, color 0.5s;
+    margin: 0; /* Reset default margin to expand the background to the whole viewport */
+    overflow: hidden; /* Hide horizontal scrollbar caused by margin change */
+}
+
+.light-mode {
+    background-color: #FFFFFF; /* Light background color */
+    color: #000000; /* Light text color */
+}
+
+.dark-mode {
+    background-color: #000000; /* Dark background color */
+    color: #FFFFFF; /* Dark text color */
+}
